@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<!-- start of html code -->
+ <html lang = "en">
+
+    <!-- start of head -->
+     <head>
+
+        <title>
+            Portfolio of Jessica Musch
+        </title>
+
+        <meta charset="UTF-8">
+        <meta name="author" content="Jessica Musch">
+        <meta name="description" content="Portfolio of Jessica Musch">
+
+        <!-- stylesheets -->
+         <link rel="stylesheet" href="../css/reset.css">
+         <link rel="stylesheet" href="../css/gallery.css">
+         <link rel="stylesheet" href="../css/imagegallery.css">
+         <link rel="stylesheet" href="../css/main.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     </head>
+
+     <!-- start of body -->
+    <body class="wrapper">
+
+        <!-- start of header -->
+        <header>
+
+            <!-- hamburger menu -->
+            <div class="hamburger" onclick="toggleNav(this)">
+                <div class="innerhamburger"></div>
+            </div>
+
+            <!-- start of Navy bar -->
+             <nav class="navgrid">
+                <ul>
+                    <li>
+                        <a href="../../index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="programming.html">
+                            Programming
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="modellinggallery.html">
+                            3D-Modelling
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="resume.html">
+                            Resume
+                        </a>
+                    </li>
+
+                    <li class="contact">
+                        <a href="https://www.linkedin.com/in/jessica-musch-33019a369?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+                            <i class="fa fa-linkedin-square"></i>
+                        </a>
+                        <a id="mlink" href="mailto:thisisafluke@thxbots.com">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </li>
+
+                </ul>
+                <!-- divider rounded -->
+                <hr class="rounded">
+             </nav>
+
+        </header>
+
+        <!-- start of main -->
+        <main>
+
+            <div class="tagsproject" >
+                    <div class="taghome">
+                        <p>
+                            Java
+                        </p>
+                    </div>
+
+                    <div class="taghome">
+                        <p>
+                            JDBC
+                        </p>
+                    </div>
+
+                    <div class="taghome">
+                        <p>
+                            Server
+                        </p>
+                    </div>
+
+                    <div class="taghome">
+                        <p>
+                            Solo Project
+                        </p>
+                    </div>
+                </div>
+
+            <hr class="rounded">
+
+            <h1>
+                Java Library Program
+            </h1>
+
+            <p class="padding">
+                The Online Library is a local REST-Web-Service Application with JSON. I have used JavaFX for the client and MySQL for the Database. The Program is made to work with multiple clients at the same time and allows users to rent and return books and admins to add, delete or edit books. I’ve completed this project during my programming 3 course in my 3rd semester.
+            </p>
+
+            <h3>
+                Library Program
+            </h3>
+
+            <!-- divider rounded -->
+            <hr class="rounded">
+
+            <!-- Image Gallery -->
+            
+            <section class="imagegallery">
+                <div class="imagegallery__item">
+                    <input type="radio" id="img-1" checked name="imagegallery" class="imagegallery__selector"/>
+                    <img class="imagegallery__img" src="../img/Admin.png" alt=""/>
+                    <label for="img-1" class="imagegallery__thumb"><img src="../img/Admin.png" alt=""/></label>
+                </div>
+                <div class="imagegallery__item">
+                    <input type="radio" id="img-2" name="imagegallery" class="imagegallery__selector"/>
+                    <img class="imagegallery__img" src="../img/Library_BookLent.png" alt=""/>
+                    <label for="img-2" class="imagegallery__thumb"><img src="../img/Library_BookLent.png" alt=""/></label>
+                </div>
+                <div class="imagegallery__item">
+                    <input type="radio" id="img-3" name="imagegallery" class="imagegallery__selector"/>
+                    <img class="imagegallery__img" src="../img/addBookadded.png" alt=""/>
+                    <label for="img-3" class="imagegallery__thumb"><img src="../img/addBookadded.png" alt=""/></label>
+                </div>
+                
+            </section> 
+        
+
+            <!-- divider rounded -->
+            <hr class="rounded">
+
+            <h3>
+                Code Snippets
+            </h3>
+
+            <div class="gallery">
+
+                <figure>
+                    <img src="../img/Server.png" alt="Start Server">
+                    <figcaption>
+                        <a href="../img/Server.png">
+                        <h3>Start Server</h3>
+                        </a> 
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="../img/ServerCommunication.png" alt="Client Communication with Server">
+                    <figcaption>
+                        <a href="../img/ServerCommunication.png">
+                        <h3>Client Communication with Server</h3>
+                        </a> 
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="../img/bookRecord.png" alt="Record for Books">
+                    <figcaption>
+                        <a href="../img/bookRecord.png">
+                        <h3>Book</h3>
+                        </a> 
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="../img/editBooks.png" alt="Add/Edit Books Window">
+                    <figcaption>
+                        <a href="../img/editBooks.png">
+                        <h3>Add/Edit Book Window</h3>
+                        </a> 
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="../img/Database.png" alt="Database">
+                    <figcaption>
+                        <a href="../img/Database.png">
+                        <h3>Database</h3>
+                        </a> 
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="../img/RESTServer.png" alt="REST Server">
+                    <figcaption>
+                        <a href="../img/RESTServer.png">
+                        <h3>REST Server</h3>
+                        </a> 
+                    </figcaption>
+                </figure>
+
+
+
+            </div>
+
+        </main>
+
+        <!-- start of footer -->
+        <footer>
+            <!-- divider rounded -->
+            <hr class="rounded">
+            </br>
+            </br>
+            <a href="imprint.html">
+                Imprint
+            </a>
+        </br>
+        </br>
+         <p>
+            © Jessica Musch
+         </p>
+        </footer>
+
+    </body>
+
+    <!-- Load JS at the end to improve loading times -->
+    <script src="../js/hamburger.js"></script>
+    <script src="../js/mailscrambler.js"></script>
+
+ </html>

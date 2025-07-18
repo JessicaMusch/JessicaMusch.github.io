@@ -1,0 +1,145 @@
+img {
+  max-inline-size: 100%;
+}
+
+.main {
+  grid-column: main;
+  padding: 1.25rem;
+}
+
+/* Photo Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  grid-auto-rows: 12.5rem;
+  grid-auto-flow: dense;
+  gap: 0.75rem;
+}
+
+.gallery figure {
+  /* container-type: inline-size; */
+  container: figure / inline-size;
+  
+  overflow: hidden;
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  /* grid-template-rows: 1fr; */
+
+  /*
+    Because 1fr = minmax(auto, 1fr),
+    to prevent the grid blowout,
+    set the minimum to zero.
+  */
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+  border-radius: 10px;
+}
+
+.gallery img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+
+  /* grid-row: 1 / -1; */
+  /* grid-column: 1 / -1; */
+  grid-area: 1 / 1 / -1 / -1;
+
+  transition: scale 1s ease-in-out;
+}
+
+.gallery > figure:hover img {
+  scale: 1.125;
+  opacity: 0.8;
+}
+
+.gallery figure:is(:hover, :focus) figure::after {
+	opacity: 1;
+}
+
+.gallery figure:is(:hover, :focus) figcaption {
+	opacity: 1;
+  transition: opacity 600ms;
+}
+
+figcaption > a > h3{
+  color: #fff;
+  font-size: 1.5rem;
+  height: 100%;
+  align-content: center;
+}
+
+figcaption {
+
+  grid-area: 1 / 1 / -1 / -1;
+  align-self: center;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  z-index: 2;
+  font-size: 0.875rem;
+  height: 100%;
+
+
+  /*
+  grid-area: 1 / 1 / -1 / -1;
+  align-self: center;
+  z-index: 1;
+
+  padding: 3em 15% 1em 1em;
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 1.3;
+  background: linear-gradient(transparent 25%, rgb(0 0 0 / 0.75));
+  display: none;
+  
+  /*
+  position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	place-items: center;
+	text-align: center;
+	padding: 1rem;
+	color: white;
+	font-size: 1.2rem;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 600ms, transform 600ms;*/
+}
+
+@container figure (width > 20rem) {
+figcaption {
+    display: block;
+  }
+}
+
+figcaption h3 {
+  font-size: 1.0625rem;
+}
+
+figcaption p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@media (width > 600px) {
+  .gallery figure:nth-child(1) {
+    grid-area: span 2 / span 2;
+  }
+
+  .gallery figure:nth-child(4n + 1) {
+    grid-row: span 2;
+  }
+
+  .gallery figure:nth-child(4n + 2) {
+    grid-column: span 2;
+  }
+
+  .figcaption{
+    opacity: 1;
+  }
+}

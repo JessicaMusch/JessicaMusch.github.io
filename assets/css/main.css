@@ -1,0 +1,635 @@
+/* ----------    General items       ---------- */
+
+
+/*
+font-family: "darkmode-on", sans-serif;
+font-weight: 400;
+font-style: normal;
+*/
+
+/* ----- Wrapper ----- */
+
+.wrapper{
+    margin: auto;
+    max-width: 1200px;
+}
+
+/* ----- Colours ----- */
+
+body{
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+}
+
+/* ----- Links ----- */
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #d4d4d4;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #4080be;
+}
+
+/* ----- Divider ----- */
+p {
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ----- Divider ----- */
+
+/* Rounded border */
+hr.rounded {
+    border-top: 2px solid #d4d4d4;
+    border-radius: 4px;
+}
+
+/* ----- Grid ----- */
+.grid{
+    display: grid;
+    grid-template-areas: ".";
+    padding: 1%;
+    z-index: 2;
+}
+
+.maingrid{
+    display: flex;
+    column-gap: 10%;
+    align-items: center;
+}
+
+/* ----- Navbar ----- */
+
+/* navbar grid and list styles*/
+.navgrid > ul{
+    display: grid;
+    grid-template-areas: ". . . . . . . .";
+    margin: 2rem;
+    align-items: center;
+    min-height: 2%;
+    list-style: none;
+    font-size: 1.4rem;
+    font-style: bold;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.navgrid > ul > li {
+    
+    padding: 1.5% 0;
+}
+
+.contact{
+    grid-column: 8;
+    text-align: right;
+    display: flex;
+    justify-content: right;
+}
+
+.contact > a{
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+/* ----- Footer ----- */
+
+/* footer design */
+footer{
+    color: #d4d4d4;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0%;
+    padding-top: 0%;
+    padding-bottom: 3%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+/* footer link */
+footer > a{
+    font-size: 1em;
+    font-weight: 600;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+#divspace{
+    padding-top: 2%;
+} 
+
+/* ----------     Main Page       ---------- */
+
+.portrait{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+    max-width: 20rem;
+}
+
+.mainpageskills{
+    font-weight: 100;
+}
+
+/* ----------     Tiles       ---------- */
+
+.tile{
+    display: flex;
+    grid-column-gap: 5%;
+    padding:0%;
+    border-radius: 0.75em;
+    background-color: #d4d4d433;
+    max-height: max-content;
+    margin: 0%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    position: relative;
+}
+
+.tile:hover{
+    color: #d4d4d4;
+    /*outline: #4080be;*/
+    outline-width: .5%;
+    outline-style: solid;
+}
+
+.tile::before{
+    background: linear-gradient(
+    45deg,
+    transparent 5%,
+    rgb(255, 215, 137) 50%,
+    transparent 99%
+  );
+  border-radius: inherit;
+  content: "";
+  inset: 1px;
+  padding: 1em;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 400ms;
+  z-index: 0;
+}
+
+#nolink:hover{
+    outline: none;
+}
+
+.noimage > div{
+    padding-left: 5%;
+}
+
+.tile > img{
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 0 0.75em 0.75em 0;
+    grid-column: 1;
+    height: auto;
+    max-width: 20rem;
+    align-self: center;
+    
+}
+
+.tile > div{
+    grid-column: 2;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#space{
+   margin-bottom: 4%;
+   margin-top: 3%;
+}
+
+#stone{
+    width: 20rem;
+}
+
+.tile > div > h2{
+    width: 100%;
+}
+
+/* ----------     Tags       ---------- */
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    grid-column-gap: 2%;
+}
+
+.tagsproject{
+    display: flex;
+    flex-wrap: wrap;
+    grid-column-gap: 2%;
+    justify-content: center;
+}
+
+.tagsproject > .taghome{
+    padding: 1%;
+}
+
+.taghome{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #d4d4d433;
+    border-radius: 20px;
+    /*border-color: #d4d4d4;
+    outline-width: 0.5%;
+    outline-style:solid;*/
+    padding: 1.5%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.tag{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    padding: 1.5%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+#first{
+    margin-left: 0%;
+}
+
+/* ----------     Projects       ---------- */
+
+.padding{
+    padding-bottom: 1.5%;
+}
+
+h1, h2{
+    padding-bottom: 2%;
+    padding-top: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ----- Video ----- */
+
+/* Width of video */
+.video{
+    width: 100%;
+    padding: 0%;
+}
+
+
+/* ----------------     Picture Slider       ---------------- */
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow {
+    grid-column: span 2;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* Dimension of images */
+.image_dimensions{
+    width: 100%;
+    max-height: 50em;
+}
+
+/* Hide images by default */
+.slides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    padding: 16px;
+
+    width: auto;
+    
+    color: #d4d4d4;
+
+    font-weight: bold;
+    font-size: larger;
+
+    transition: 0.6s ease;
+
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover dark gray background colour */
+.prev:hover, .next:hover {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+}
+
+/* Caption text */
+.caption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    padding: 15px;
+    color: #d4d4d4;
+    position: absolute;
+    bottom: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* ----- Fading animation ----- */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+
+
+/* ----------     Hamburger Menu       ---------- */
+
+/* ----- General hamburger menu display ----- */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 4em;
+    height: 10em;
+    cursor: pointer;
+    position: relative;
+    overflow: visible;
+}
+
+/* ----- Hamburger icon design and position ----- */
+
+.hamburger .innerhamburger, .hamburger .innerhamburger::after,
+.hamburger .innerhamburger::before {
+    background-color: #d4d4d4;
+    border-radius: 4px;
+    width: inherit;
+    height: 4px;
+    position: absolute;
+}
+
+.hamburger .innerhamburger::after, .hamburger .innerhamburger::before {
+    display: block;
+    content: "";
+}
+
+.hamburger .innerhamburger::before {top: -20px;}
+.hamburger .innerhamburger::after {bottom: -20px;}
+
+/* x design */
+.hamburger.active .innerhamburger {transform: rotate(45deg);}
+.hamburger.active .innerhamburger::before {
+    top: 0;
+    opacity: 0;
+}
+
+.hamburger.active .innerhamburger::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+}
+
+
+/* ----------     Picture Slider       ---------- */
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow {
+    grid-column: span 3;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* Dimension of images */
+.image_dimensions{
+    width: 100%;
+    max-height: 50em;
+}
+
+/* Hide images by default */
+.slides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    padding: 16px;
+
+    width: auto;
+    
+    color: #d4d4d4;
+
+    font-weight: bold;
+    font-size: larger;
+
+    transition: 0.6s ease;
+
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover dark gray background colour */
+.prev:hover, .next:hover {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+}
+
+/* Caption text */
+.caption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    padding: 15px;
+    color: #d4d4d4;
+    position: absolute;
+    bottom: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* ----- Fading animation ----- */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* ----------------     Tablet Size       ---------------- */
+
+
+@media(max-width: 1280px) {
+    
+
+    /* ----- Wrapper ----- */
+
+    .wrapper {
+        width: calc(100% - 10vw);
+    }
+
+    /* ----- Project pages ----- */
+
+    /* main grid for project pages */
+    .project_grid {
+        display: grid;
+        grid-template-areas: ". .";
+        grid-gap: 50px;
+    }
+
+    /* image size for images in sliders */
+    .image_dimensions{
+        width: 100%;
+        max-height: 38em;
+    }
+
+    .navgrid a{
+        display: block;
+        padding: 14px 16px;
+    }
+
+    .navgrid a:hover{
+        background-color: #d4d4d4;
+        color: #1e1e1e;
+    }
+}
+
+/* ----------------     Phone Size       ---------------- */
+
+
+@media(max-width: 1000px) {
+
+    /* ----- General Items ----- */
+
+    /* wrapper */
+    .wrapper {
+        padding: 20px;
+    }
+
+    /* link font size */
+    a {
+        font-size: larger;
+    }
+
+    /* Footer */
+    .footer{
+        font-size: 2em;
+    }
+
+
+    /* ----- Nav Bar ----- */
+
+    /* Font Size */
+    .navgrid > ul > li > a {
+        font-size: 3em;
+    }
+
+    /* ----- Landing Page -----*/
+    .maingrid{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .portrait{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .maingrid > div > h1{
+        text-align: center;
+    }
+
+    .contact{
+        font-size: 30px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    /* ----- Hamburger Menu ----- */
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navgrid {
+        width: auto;
+    }
+
+    .navgrid.active ul {
+        display: block;
+    }
+
+    .navgrid > ul {
+        display: grid;
+        grid-template-areas: ".";
+        grid-gap: 30px;
+        display: none;
+        text-align: center;
+    }
+
+    
+    /* ----- Project Pages ----- */
+
+    /* main grid */
+    .project_grid {
+        display: grid;
+        grid-template-areas: ".";
+        grid-gap: 50px;
+    }
+
+    .tile > img{
+        opacity: 0;
+        width: 0;
+    }
+
+    /* image size for in slider */
+    .image_dimensions{
+        width: 100%;
+        max-height: 60em;
+    }
+}

@@ -1,0 +1,30 @@
+/* ----------     Resume       ---------- */
+
+#resume{
+    width: 100%;
+    border-top: 1px;
+}
+
+.resumetile{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.resumetile > h3, h2{
+    width: 20%;
+}
+
+.resumerow {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.resumerow > h3 {
+    text-align: left;
+    margin-right: 6%;
+    margin-left: 5%;
+    padding: 1%;
+    width: 10%;
+}
