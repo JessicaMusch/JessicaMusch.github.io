@@ -17,20 +17,20 @@ font-style: normal;
 /* ----- Colours ----- */
 
 body{
-    background-color: #1e1e1e;
-    color: #d4d4d4;
+    background-color: #eeeeee;
+    color: #1e1e1e;
 }
 
 /* ----- Links ----- */
 
 a {
     font-family: Arial, Helvetica, sans-serif;
-    color: #d4d4d4;
+    color: #1e1e1e;
     text-decoration: none;
 }
 
 a:hover{
-    color: #4080be;
+    color: #1f5492;
 }
 
 /* ----- Divider ----- */
@@ -43,7 +43,7 @@ p {
 
 /* Rounded border */
 hr.rounded {
-    border-top: 2px solid #d4d4d4;
+    border-top: 2px solid #1e1e1e;
     border-radius: 4px;
 }
 
@@ -98,7 +98,7 @@ hr.rounded {
 
 /* footer design */
 footer{
-    color: #d4d4d4;
+    color: #1e1e1e;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
@@ -141,7 +141,7 @@ footer > a{
     grid-column-gap: 5%;
     padding:0%;
     border-radius: 0.75em;
-    background-color: #d4d4d433;
+    background-color: #1e1e1e20;
     max-height: max-content;
     margin: 0%;
     margin-top: 2%;
@@ -150,7 +150,7 @@ footer > a{
 }
 
 .tile:hover{
-    color: #d4d4d4;
+    color: #1e1e1e;
     /*outline: #4080be;*/
     outline-width: .5%;
     outline-style: solid;
@@ -184,10 +184,11 @@ footer > a{
 .tile > img{
     object-fit: cover;
     object-position: center center;
-    border-radius: 0 0.75em 0.75em 0;
+    border-radius: 0.75em 0 0 0.75em;
     grid-column: 1;
-    height: auto;
     max-width: 20rem;
+    height: 100%;
+    scale: auto;
     align-self: center;
     
 }
@@ -197,6 +198,8 @@ footer > a{
     padding-right: 5%;
     padding-top: 2%;
     padding-bottom: 2%;
+    text-align: justify;
+    hyphens: auto;
 }
 
 #space{
@@ -217,13 +220,15 @@ footer > a{
 .tags{
     display: flex;
     flex-wrap: wrap;
-    grid-column-gap: 2%;
+    column-gap: 2%;
+    row-gap: 0.5em;
 }
 
 .tagsproject{
     display: flex;
     flex-wrap: wrap;
-    grid-column-gap: 2%;
+    column-gap: 2%;
+    row-gap: 0.5em;
     justify-content: center;
 }
 
@@ -235,7 +240,7 @@ footer > a{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #d4d4d433;
+    background-color: #d4d4d4;
     border-radius: 20px;
     /*border-color: #d4d4d4;
     outline-width: 0.5%;
@@ -249,7 +254,7 @@ footer > a{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #1e1e1e;
+    background-color: #eeeeee;
     border-radius: 20px;
     padding: 1.5%;
     max-width: 100%;
@@ -622,9 +627,26 @@ h3{
         grid-gap: 50px;
     }
 
-    .tile > img{
-        opacity: 0;
-        width: 0;
+    .tile{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 0.75em;
+    }
+
+    .tile > img {
+        border-radius: 0.75em 0.75em 0 0;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .tile > div{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .tags{
+        row-gap: 2%;
     }
 
     /* image size for in slider */
