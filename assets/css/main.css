@@ -17,7 +17,7 @@ font-style: normal;
 /* ----- Colours ----- */
 
 body{
-    background-color: #eeeeee;
+    background-color: #efefef;
     color: #1e1e1e;
 }
 
@@ -30,7 +30,7 @@ a {
 }
 
 a:hover{
-    color: #1f5492;
+    color: #1f8c9d;
 }
 
 /* ----- Divider ----- */
@@ -43,7 +43,7 @@ p {
 
 /* Rounded border */
 hr.rounded {
-    border-top: 2px solid #1e1e1e;
+    border-top: 1px solid #1e1e1e;
     border-radius: 4px;
 }
 
@@ -64,6 +64,11 @@ hr.rounded {
 /* ----- Navbar ----- */
 
 /* navbar grid and list styles*/
+.navgrid{
+    background-color: #1f8c9d;
+    border-radius: 20px 20px 0px 0px;
+    align-content: center;
+}
 .navgrid > ul{
     display: grid;
     grid-template-areas: ". . . . . . . .";
@@ -82,6 +87,14 @@ hr.rounded {
     padding: 1.5% 0;
 }
 
+.navgrid > ul > li > a{
+    color: #efefef;
+}
+
+.navgrid > ul > li > a:hover{
+    color: #b5dee4;
+}
+
 .contact{
     grid-column: 8;
     text-align: right;
@@ -94,11 +107,18 @@ hr.rounded {
     font-size: 24px;
 }
 
+header > .rounded {
+    margin: 0%;
+    
+}
+
 /* ----- Footer ----- */
 
 /* footer design */
 footer{
-    color: #1e1e1e;
+    background-color: #1f8c9d;
+    border-radius: 0px 0px 20px 20px;
+    color: #efefef;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
@@ -111,10 +131,15 @@ footer{
 
 /* footer link */
 footer > a{
+    color: #efefef;
     font-size: 1em;
     font-weight: 600;
     padding-left: 0%;
     padding-right: 0%;
+}
+
+footer > a:hover{
+    color: #b5dee4;
 }
 
 #divspace{
@@ -127,7 +152,7 @@ footer > a{
     margin-top: 2rem;
     margin-bottom: 2rem;
     border-radius: 20px;
-    max-width: 20rem;
+    max-height: 20rem;
 }
 
 .mainpageskills{
@@ -141,7 +166,10 @@ footer > a{
     grid-column-gap: 5%;
     padding:0%;
     border-radius: 0.75em;
-    background-color: #1e1e1e20;
+    /*outline: #1e1e1e;
+    outline-width: .1em;
+    outline-style: solid;*/
+    background-color: #e1e6e7;
     max-height: max-content;
     margin: 0%;
     margin-top: 2%;
@@ -151,7 +179,7 @@ footer > a{
 
 .tile:hover{
     color: #1e1e1e;
-    /*outline: #4080be;*/
+    outline: #1f8c9d;
     outline-width: .5%;
     outline-style: solid;
 }
@@ -225,6 +253,7 @@ footer > a{
 }
 
 .tagsproject{
+    margin-top: 8px;
     display: flex;
     flex-wrap: wrap;
     column-gap: 2%;
@@ -240,7 +269,7 @@ footer > a{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #d4d4d4;
+    background-color: #b5dee4;
     border-radius: 20px;
     /*border-color: #d4d4d4;
     outline-width: 0.5%;
@@ -254,7 +283,7 @@ footer > a{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #eeeeee;
+    background-color: #b5dee4;
     border-radius: 20px;
     padding: 1.5%;
     max-width: 100%;
@@ -396,7 +425,7 @@ h3{
 
 .hamburger .innerhamburger, .hamburger .innerhamburger::after,
 .hamburger .innerhamburger::before {
-    background-color: #d4d4d4;
+    background-color: #1f8c9d;
     border-radius: 4px;
     width: inherit;
     height: 4px;
@@ -539,8 +568,7 @@ h3{
     }
 
     .navgrid a:hover{
-        background-color: #d4d4d4;
-        color: #1e1e1e;
+        color: #1f8c9d;
     }
 }
 
@@ -574,16 +602,25 @@ h3{
         font-size: 3em;
     }
 
-    /* ----- Landing Page -----*/
+    /* ----- About Me Page -----*/
     .maingrid{
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    #text{
+        order:2;
+    }
+
+    #image{
+        order:1;
     }
 
     .portrait{
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
+
 
     .maingrid > div > h1{
         text-align: center;
