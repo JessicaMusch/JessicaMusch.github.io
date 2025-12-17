@@ -17,14 +17,13 @@
         <!-- stylesheets -->
          <link rel="stylesheet" href="../css/reset.css">
          <link rel="stylesheet" href="../css/gallery.css">
-         <link rel="stylesheet" href="../css/imagegallery.css">
          <link rel="stylesheet" href="../css/main.css">
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
      </head>
 
      <!-- start of body -->
-    <body class="wrapper">
+    <body>
 
         <!-- start of header -->
         <header>
@@ -75,9 +74,21 @@
         </header>
 
         <!-- start of main -->
-        <main>
+        <main class="wrapper">
 
             <div class="tagsproject" >
+                    <div class="taghome">
+                        <p>
+                            Solo Project
+                        </p>
+                    </div>
+
+                    <div class="taghome">
+                        <p>
+                            Programming
+                        </p>
+                    </div>
+
                     <div class="taghome">
                         <p>
                             Java
@@ -92,13 +103,13 @@
 
                     <div class="taghome">
                         <p>
-                            Server
+                            REST Server
                         </p>
                     </div>
 
                     <div class="taghome">
                         <p>
-                            Solo Project
+                            Java FX
                         </p>
                     </div>
                 </div>
@@ -110,96 +121,91 @@
             </h1>
 
             <p class="padding">
-                The Online Library is a local REST-Web-Service Application with JSON. I have used JavaFX for the client and MySQL for the Database. The Program is made to work with multiple clients at the same time and allows users to rent and return books and admins to add, delete or edit books. I’ve completed this project during my programming 3 course in my 3rd semester.
+                I created the library as an assignment in my 3rd semester within a few weeks. The given task was very detailed, so I followed it exactly and only added some bonus functionalities, like the error messages if something did not work.
             </p>
 
             <h3>
-                Library Program
-            </h3>
-
-            <!-- divider rounded -->
-            <hr class="rounded">
-
-            <!-- Image Gallery -->
-            
-            <section class="imagegallery">
-                <div class="imagegallery__item">
-                    <input type="radio" id="img-1" checked name="imagegallery" class="imagegallery__selector"/>
-                    <img class="imagegallery__img" src="../img/Admin.png" alt=""/>
-                    <label for="img-1" class="imagegallery__thumb"><img src="../img/Admin.png" alt=""/></label>
-                </div>
-                <div class="imagegallery__item">
-                    <input type="radio" id="img-2" name="imagegallery" class="imagegallery__selector"/>
-                    <img class="imagegallery__img" src="../img/Library_BookLent.png" alt=""/>
-                    <label for="img-2" class="imagegallery__thumb"><img src="../img/Library_BookLent.png" alt=""/></label>
-                </div>
-                <div class="imagegallery__item">
-                    <input type="radio" id="img-3" name="imagegallery" class="imagegallery__selector"/>
-                    <img class="imagegallery__img" src="../img/addBookadded.png" alt=""/>
-                    <label for="img-3" class="imagegallery__thumb"><img src="../img/addBookadded.png" alt=""/></label>
-                </div>
-                
-            </section> 
-        
-
-            <!-- divider rounded -->
-            <hr class="rounded">
-
-            <h3>
-                Code Snippets
+                Gallery
             </h3>
 
             <div class="gallery">
 
                 <figure>
-                    <img src="../img/Server.png" alt="Start Server">
+                    <img src="../img/libraryAdmin.png" alt="Admin view of library">
                     <figcaption>
-                        <a href="../img/Server.png">
+                        <a href="../img/libraryAdmin.png">
+                        <h3 class="darktext">Admin View</h3>
+                        </a> 
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="../img/libraryBookLent.png" alt="Lent books page">
+                    <figcaption>
+                        <a href="../img/libraryBookLent.png">
+                        <h3 class="darktext">Books Lent</h3>
+                        </a> 
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="../img/libraryBookAdded.png" alt="Book added to the library">
+                    <figcaption>
+                        <a href="../img/libraryBookAdded.png">
+                        <h3 class="darktext">Book Added</h3>
+                        </a> 
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="../img/libraryServer.png" alt="Start Server">
+                    <figcaption>
+                        <a href="../img/libraryServer.png">
                         <h3>Start Server</h3>
                         </a> 
                     </figcaption>
                 </figure>
 
                 <figure>
-                    <img src="../img/ServerCommunication.png" alt="Client Communication with Server">
+                    <img src="../img/libraryServerCommunication.png" alt="Client Communication with Server">
                     <figcaption>
-                        <a href="../img/ServerCommunication.png">
+                        <a href="../img/libraryServerCommunication.png">
                         <h3>Client Communication with Server</h3>
                         </a> 
                     </figcaption>
                 </figure>
 
                 <figure>
-                    <img src="../img/bookRecord.png" alt="Record for Books">
+                    <img src="../img/libraryBookRecord.png" alt="Record for Books">
                     <figcaption>
-                        <a href="../img/bookRecord.png">
+                        <a href="../img/libraryBookRecord.png">
                         <h3>Book</h3>
                         </a> 
                     </figcaption>
                 </figure>
 
                 <figure>
-                    <img src="../img/editBooks.png" alt="Add/Edit Books Window">
+                    <img src="../img/libraryEditBooks.png" alt="Add/Edit Books Window">
                     <figcaption>
-                        <a href="../img/editBooks.png">
+                        <a href="../img/libraryEditBooks.png">
                         <h3>Add/Edit Book Window</h3>
                         </a> 
                     </figcaption>
                 </figure>
 
                 <figure>
-                    <img src="../img/Database.png" alt="Database">
+                    <img src="../img/libraryDatabase.png" alt="Database">
                     <figcaption>
-                        <a href="../img/Database.png">
+                        <a href="../img/libraryDatabase.png">
                         <h3>Database</h3>
                         </a> 
                     </figcaption>
                 </figure>
 
                 <figure>
-                    <img src="../img/RESTServer.png" alt="REST Server">
+                    <img src="../img/libraryRESTServer.png" alt="REST Server">
                     <figcaption>
-                        <a href="../img/RESTServer.png">
+                        <a href="../img/libraryRESTServer.png">
                         <h3>REST Server</h3>
                         </a> 
                     </figcaption>

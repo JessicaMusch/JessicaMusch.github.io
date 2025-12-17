@@ -23,7 +23,7 @@
      </head>
 
      <!-- start of body -->
-    <body class="wrapper">
+    <body>
 
         <!-- start of header -->
         <header>
@@ -74,24 +74,12 @@
         </header>
 
         <!-- start of main -->
-        <main>
+        <main class="wrapper">
 
             <div class="tagsproject">
                     <div class="taghome">
                         <p>
-                            Unity Game Engine
-                        </p>
-                    </div>
-
-                    <div class="taghome">
-                        <p>
-                            C#
-                        </p>
-                    </div>
-
-                    <div class="taghome">
-                        <p>
-                            Highscore Chase
+                            Solo Project
                         </p>
                     </div>
 
@@ -103,13 +91,31 @@
 
                     <div class="taghome">
                         <p>
-                            Pixel Art
+                            2D Art
                         </p>
                     </div>
 
                     <div class="taghome">
                         <p>
-                            Solo Project
+                            Game Programming
+                        </p>
+                    </div>
+
+                    <div class="taghome">
+                        <p>
+                            Computer Game
+                        </p>
+                    </div>
+
+                    <div class="taghome">
+                        <p>
+                            C#
+                        </p>
+                    </div>
+
+                    <div class="taghome">
+                        <p>
+                            Unity Game Engine
                         </p>
                     </div>
                 </div>
@@ -127,27 +133,22 @@
             <h3>
                 Gameplay
             </h3>
-
-            <!-- divider rounded -->
-            <hr class="rounded">
             <!-- Gameplay video -->
             <div class="media">
                 <video class="video" controls>
                 <source src="../videos/fall.mp4" type="video/mp4">
             </video>
-            <!-- divider rounded -->
-            <hr class="rounded">
 
             <h3>
-                My Coding Process
+                My development process
             </h3>
 
             <p class="padding">
-                As I worked on the game alone, I started with the fundamental functionalities of the game, like the movement of the character and the falling of the objects, and went from there more and more into the specifics. Those include the Points and Hearts given and lost by the falling items, the resulting Highscore, the increased spawnrate and falling speed over time, the UI and the sound effects. 
+                At the beginning I worked on the game design of Fall and made a list of all necessary features that were needed for the assignment and all other gameplay features that I wanted to add. As I knew that I would realistically only have a few weeks to make the whole game, I kept the features to a minimum. After I had my list of features, I started to implement all the basic functionalities like the movement of the character or the spawning and spawnrate for the different objects. Then I started to flesh out the game and added the menus, sound effects, background music and the settings. In the end I worked on the pixel art to replace all my placeholder objects with the correct sprites and playtested the game to eliminate the last remaining bugs that I missed during the development.    
             </p>
 
             <h3>
-                Images
+                Gallery
             </h3>
 
             <div class="gallery">
@@ -156,7 +157,7 @@
                     <img src="../img/fallBackground.png" alt="Pixel Art Background of a cosy hut in a forest during fall">
                     <figcaption>
                         <a href="../img/fallBackground.png">
-                        <h3></h3>
+                        <h3>Background</h3>
                         </a> 
                     </figcaption>
                 </figure>
@@ -165,7 +166,7 @@
                     <img src="../img/fallCharacterWalk.png" alt="Walking cycle of the forest witch">
                     <figcaption>
                         <a href="../img/fallCharacterWalk.png">
-                        <h3></h3>
+                        <h3 class="darktext">Walk Cycle</h3>
                         </a> 
                     </figcaption>
                 </figure>
@@ -174,7 +175,7 @@
                     <img src="../img/fallIcon.png" alt="Pixel Art Icon of a pumpkin and mushrooms">
                     <figcaption>
                         <a href="../img/fallIcon.png">
-                        <h3></h3>
+                        <h3>Logo</h3>
                         </a> 
                     </figcaption>
                 </figure>
@@ -183,7 +184,7 @@
                     <img src="../img/fallSpawnrate.png" alt="Screenshot of the code for the spawnrate of falling objects">
                     <figcaption>
                         <a href="../img/fallSpawnrate.png">
-                        <h3></h3>
+                        <h3>Spawnrate</h3>
                         </a> 
                     </figcaption>
                 </figure>
@@ -192,7 +193,7 @@
                     <img src="../img/fallVolumeSettings.png" alt="Screenshot of the code for the volume settings">
                     <figcaption>
                         <a href="../img/fallVolumeSettings.png">
-                        <h3></h3>
+                        <h3>Volume Settings</h3>
                         </a> 
                     </figcaption>
                 </figure>
@@ -201,7 +202,7 @@
                     <img src="../img/fallHearts.png" alt="Pixel Art Hearts, one full and one empty">
                     <figcaption>
                         <a href="../img/fallHearts.png">
-                        <h3></h3>
+                        <h3 class="darktext">Hearts</h3>
                         </a> 
                     </figcaption>
                 </figure>
@@ -210,16 +211,16 @@
                 <img src="../img/fallLoadingHighscore.png" alt="Screenshot of the code for loading the highscore">
                     <figcaption>
                         <a href="../img/fallLoadingHighscore.png">
-                        <h3></h3>
+                        <h3>Loading Highscore</h3>
                         </a> 
                     </figcaption>
                 </figure>
 
                 <figure>
-                <img src="../img/fallSavingHighscore.png" alt="Screenshot of the code for saving the highscore">
+                <img src="../img/fallAcorn.png" alt="Pixel Art of the special Acorn that gives the player 5 points instead of only 1">
                     <figcaption>
-                        <a href="../img/fallSavingHighscore.png">
-                        <h3></h3>
+                        <a href="../img/fallAcorn.png">
+                        <h3>Acorn</h3>
                         </a> 
                     </figcaption>
                 </figure>
@@ -228,29 +229,47 @@
                 <img src="../img/FallObjectsToSpawn.png" alt="Screenshot of the code to select the spawning objects">
                     <figcaption>
                         <a href="../img/FallObjectsToSpawn.png">
-                        <h3></h3>
+                        <h3>Spawning Objects</h3>
                         </a> 
                     </figcaption>
                 </figure>
 
                 <figure>
-                <img src="../img/betweentime.png" alt="simple aztec pyramid for VR Game">
+                <img src="../img/fallSavingHighscore.png" alt="Screenshot of the code for saving the highscore">
                     <figcaption>
-                        <a href="../img/betweentime.png">
-                        <h3></h3>
+                        <a href="../img/fallSavingHighscore.png">
+                        <h3>Saving Highscore</h3>
                         </a> 
                     </figcaption>
                 </figure>
 
                 <figure>
-                <img src="../img/pillars.png" alt="simple aztec pyramid for VR Game">
+                <img src="../img/fallApple.png" alt="Pixel Art of the simple Apple that gives only 1 point to the player">
                     <figcaption>
-                        <a href="../img/pillars.png">
-                        <h3></h3>
+                        <a href="../img/fallApple.png">
+                        <h3>Apple</h3>
+                        </a> 
+                    </figcaption>
+                </figure>
+
+                <figure>
+                <img src="../img/fallPumpkin.png" alt="Pixel Art pumpkin that removes one heart from the player">
+                    <figcaption>
+                        <a href="../img/fallPumpkin.png">
+                        <h3>Pumpkin</h3>
                         </a> 
                     </figcaption>
                 </figure>
             </div>
+
+            <h3>
+                What I would add to Fall 
+            </h3>
+
+
+            <p class="padding">
+                Looking back at Fall, I would now make a few things different. Firstly, I would add a different sound effect for the acorns to let the player know that he just got more points from the item. Additionally I would add a few more features to make the gameplay more interesting. Currently the player only needs to move left and right and avoid all the pumpkins. I believe that by adding a few more special items the gameplay could be enhanced without taking away the relaxing part of the game. For example: I would add another item that takes away points from the players and to counteract this, I would also add an rare item that adds a heart to the players life-counter. Also there could be other objects falling down that stay for a second or two on the ground and block the players path temporarily.
+            </p>
             
         </main>
 

@@ -22,7 +22,7 @@
      </head>
 
      <!-- start of body -->
-    <body class="wrapper">
+    <body>
 
         <!-- start of header -->
         <header>
@@ -36,7 +36,7 @@
              <nav class="navgrid">
                 <ul>
                     <li>
-                        <a href="index.html">
+                        <a href="index.html" style="color: #b5dee4;">
                             Home
                         </a>
                     </li>
@@ -73,55 +73,64 @@
         </header>
         
         <!-- start of main -->
-        <main class="maingrid">
-            <img src="assets/img/jessicamusch.png" class="portrait"></img>
+        <main class="wrapper maingrid">
 
-            <div>
-                <h1>
-                    Welcome!
+            <div class="padding">
+                <h1 class="intro">
+                    Hi, I'm Jessica!
                 </h1>
 
-                <h3  class="mainpageskills">
-                    My name is Jessica Musch! I’m a 23 year old media informatics student at the Harz University of Applied Sciences in my 7th semester. My interests lie in game-programming and 3D-modelling. I like to live out my creativity and implement my ideas with great attention to detail.
-                </h3>
-                <br>
+                <div class="center">
+                    <p class="padding hometext">
+                        My passion lies in the creation and visualization of worlds and the development of computer games. I like to express my creativity and work with great attention to detail.
+                    </p>
+                </div>
 
-                <!-- divider rounded -->
-                <hr class="rounded" id="resume">
+                <div class="slideshow">                    
+                    <a class="slide sliding" href="assets/html/fall.html">
+                        <img src="assets/img/fallBackground.png" alt="Main Character and Hero" style="width: 100%;">
+                        <h1 class="captiontitle">
+                            Fall
+                        </h1>
 
-                <br>
+                        <h3 class="caption">
+                            Cosy Computer Game
+                        </h3>
+                    </a>
 
-                <h3>
-                    My main skills lie in:
-                </h3>
+                    <a class="slide sliding" href="assets/html/mocap.html">
+                        <img src="assets/img/betweenDiceAndMadnessStart.png" alt="Between Dice and Madness: A classic Adventure" style="width: 100%;">
+                        <h1 class="captiontitle">
+                            Between Dice and Madness: A classic Adventure
+                        </h1>
 
-                <br>
+                        <h3 class="caption">
+                            Motion Capture Short Movie
+                        </h3>
+                    </a>
 
+                    <a class="slide sliding" href="assets/html/bubblr.html">
+                        <img src="assets/img/bubblr.png" alt="Bubblr" style="width: 100%;">
+                        <h1 class="captiontitle" id="textdarkbubblr">
+                            Bubblr
+                        </h1>
 
-                <div class="tags">
-                    <div class="taghome" id="first">
-                        <p>
-                            Java
-                        </p>
-                    </div>
+                        <h3 class="caption">
+                            Global Game Jam 2025
+                        </h3>
+                    </a>
 
-                    <div class="taghome">
-                        <p>
-                            C#
-                        </p>
-                    </div>
+                    <a class="slide sliding" href="assets/html/betweentime.html">
+                        <img src="assets/img/betweenTime.png" alt="Bubblr" style="width: 100%;">
+                        <h1 class="captiontitle">
+                            Between Time
+                        </h1>
 
-                    <div class="taghome">
-                        <p>
-                            Unity Game Engine
-                        </p>
-                    </div>
-
-                    <div class="taghome">
-                        <p>
-                            Blender
-                        </p>
-                    </div>
+                        <h3 class="caption">
+                            Virtual Reality Escape Room Game
+                        </h3>
+                    </a>
+                    
                 </div>
             </div>
 
@@ -145,6 +154,7 @@
 
     <!-- Load JS at the end to improve loading times -->
     <script src="assets/js/hamburger.js"></script>
+    <script src="assets/js/slideshow.js"></script>
     <script src="assets/js/mailscrambler.js"></script>
 
  </html>

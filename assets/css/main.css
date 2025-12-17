@@ -11,13 +11,17 @@ font-style: normal;
 
 .wrapper{
     margin: auto;
-    max-width: 1200px;
+    max-width: 1300px;
 }
 
 /* ----- Colours ----- */
 
 body{
     background-color: #efefef;
+    color: #1e1e1e;
+}
+
+.darktext{
     color: #1e1e1e;
 }
 
@@ -33,7 +37,7 @@ a:hover{
     color: #1f8c9d;
 }
 
-/* ----- Divider ----- */
+/* ----- Text ----- */
 p {
     font-size: 1.1rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -43,7 +47,14 @@ p {
 
 /* Rounded border */
 hr.rounded {
-    border-top: 1px solid #1e1e1e;
+    border-top: 2px solid #1f8c9d;
+    border-radius: 4px;
+}
+
+
+.resume{
+    width: 100%;
+    border-top: 1px solid #1f8c9d;
     border-radius: 4px;
 }
 
@@ -66,7 +77,6 @@ hr.rounded {
 /* navbar grid and list styles*/
 .navgrid{
     background-color: #1f8c9d;
-    border-radius: 20px 20px 0px 0px;
     align-content: center;
 }
 .navgrid > ul{
@@ -117,7 +127,6 @@ header > .rounded {
 /* footer design */
 footer{
     background-color: #1f8c9d;
-    border-radius: 0px 0px 20px 20px;
     color: #efefef;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -159,6 +168,21 @@ footer > a:hover{
     font-weight: 100;
 }
 
+.intro{
+    text-align: center;
+}
+
+.hometext{
+    text-align: center;
+    width: 60%;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* ----------     Tiles       ---------- */
 
 .tile{
@@ -180,7 +204,7 @@ footer > a:hover{
 .tile:hover{
     color: #1e1e1e;
     outline: #1f8c9d;
-    outline-width: .5%;
+    outline-width: 2px;
     outline-style: solid;
 }
 
@@ -263,6 +287,8 @@ footer > a:hover{
 
 .tagsproject > .taghome{
     padding: 1%;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .taghome{
@@ -320,91 +346,27 @@ h3{
     padding: 0%;
 }
 
-
-/* ----------------     Picture Slider       ---------------- */
-
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow {
-    grid-column: span 2;
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-}
-
-/* Dimension of images */
-.image_dimensions{
-    width: 100%;
-    max-height: 50em;
-}
-
-/* Hide images by default */
-.slides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    margin-top: -22px;
-    padding: 16px;
-
-    width: auto;
-    
-    color: #d4d4d4;
-
-    font-weight: bold;
-    font-size: larger;
-
-    transition: 0.6s ease;
-
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover dark gray background colour */
-.prev:hover, .next:hover {
-    background-color: #1e1e1e;
-    color: #d4d4d4;
-}
-
-/* Caption text */
-.caption {
+#bulletlist{
+    font-size: 1.1rem;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: larger;
-    padding: 15px;
-    color: #d4d4d4;
-    position: absolute;
-    bottom: 1em;
-    width: 100%;
-    text-align: center;
+    padding-left: 2%;
 }
 
-
-/* ----- Fading animation ----- */
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+.columns{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+.columns > div{
+    width: 50%;
 }
 
-
-
+.padding > ul{
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 4%;
+    padding-right: 4%;
+}
 
 /* ----------     Hamburger Menu       ---------- */
 
@@ -452,74 +414,61 @@ h3{
     transform: rotate(-90deg);
 }
 
+/* ----------     Videos       ---------- */
+.media {
+    
+}
+
+iframe{
+    border-radius: 20px;
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: 100%;
+}
 
 /* ----------     Picture Slider       ---------- */
-
-
-* {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow {
     grid-column: span 3;
-    max-width: 100%;
+    max-width: 80%;
     position: relative;
     margin: auto;
-}
-
-/* Dimension of images */
-.image_dimensions{
-    width: 100%;
-    max-height: 50em;
-}
-
-/* Hide images by default */
-.slides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    margin-top: -22px;
-    padding: 16px;
-
-    width: auto;
-    
-    color: #d4d4d4;
-
-    font-weight: bold;
-    font-size: larger;
-
-    transition: 0.6s ease;
-
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover dark gray background colour */
-.prev:hover, .next:hover {
-    background-color: #1e1e1e;
-    color: #d4d4d4;
 }
 
 /* Caption text */
 .caption {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: larger;
     padding: 15px;
-    color: #d4d4d4;
+    color: #efefef;
     position: absolute;
-    bottom: 1em;
+    bottom: 2%;
     width: 100%;
     text-align: center;
+}
+
+.captiontitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    padding: 15px;
+    color: #efefef;
+    position: absolute;
+    bottom: 45%;
+    width: 100%;
+    text-align: center;
+}
+
+#textdarkbubblr{
+    color: #1e1e1e;
+}
+
+.slide > img{
+    height: 650px;
+    object-fit: cover;
+    object-position: center center;
+    scale: auto;
+    width: 100%;
+    border-radius: 20px;
 }
 
 
@@ -527,12 +476,25 @@ h3{
 
 .fade {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
 }
 
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+/* ----- Sliding animation ----- */
+
+.sliding{
+    position:relative;
+    animation:animateright 0.4s
+}
+
+@keyframes animateright
+{
+    from{right:-300px;opacity:0} 
+    to{right:0;opacity:1}
 }
 
 /* ----------------     Tablet Size       ---------------- */
@@ -690,5 +652,14 @@ h3{
     .image_dimensions{
         width: 100%;
         max-height: 60em;
+    }
+
+    .columns > div{
+        width: 100%;
+    }
+
+    .padding > ul{
+        padding-left: 2%;
+        padding-right: 2%;
     }
 }

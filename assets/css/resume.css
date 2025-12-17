@@ -1,10 +1,5 @@
 /* ----------     Resume       ---------- */
 
-#resume{
-    width: 100%;
-    border-top: 1px;
-}
-
 .resumetile{
     display: flex;
     align-items: center;
@@ -21,10 +16,42 @@
     align-items: center;
 }
 
+.skills{
+    display:flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.skills > div{
+    width: 25%;
+}
+
+.bar {
+    background-color: #b5dee4;
+    height: 15px;
+    width: 90%;
+    border-radius: 20px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.progress {
+    background-color: #1f8c9d;
+    height: 100%;
+    border-radius: 20px;
+}
+
 .resumerow > h3 {
     text-align: left;
     margin-right: 6%;
     margin-left: 5%;
     padding: 1%;
     width: 10%;
+}
+
+@media(max-width: 1000px) {
+
+    .skills > div{
+        width: 50%;
+    }
 }
