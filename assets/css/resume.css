@@ -1,3 +1,13 @@
+/* ----------    Variables       ---------- */
+:root{
+    --background: 228, 233, 224;
+    --light: 202,210,197;
+    --medium: 132,169,140;
+    --darker: 82,121,111;
+    --dark: 53,79,82;
+    --fontcolour: #1e1e1e;
+}
+
 /* ----------     Resume       ---------- */
 
 .resumetile{
@@ -10,24 +20,75 @@
     width: 20%;
 }
 
+ul{
+    margin: 0%;
+    padding: 0%;
+    padding-left: 3%;
+    margin-top: 2%;
+}
+
+details > summary{
+    cursor: pointer;
+}
+
+details > summary:hover{
+    color: rgb(var(--darker));
+}
+
 .resumerow {
     display: flex;
     width: 100%;
-    align-items: center;
+    align-items: top;
+    margin-bottom: 1%;
 }
 
-.skills{
-    display:flex;
-    width: 100%;
+.resumerow > h3{
+    padding: 0%;
+    margin: 0%;
+    text-align: left;
+    margin-right: 6%;
+    margin-left: 5%;
+    padding: 1%;
+    padding-top: 0%;
+    width: 10%;
+}
+
+.resumerow > div > h3{
+    padding: 0%;
+    padding-bottom: .5%;
+}
+
+details > ul > li{
+    font-size: smaller;
+    margin-left: 4%;
+}
+
+.skillstile{
+    display: flex;
     flex-wrap: wrap;
-}
+    justify-content: space-between;
+    margin-bottom: 2rem;
 
-.skills > div{
-    width: 25%;
+    h1{
+        width: 100%;
+    }
+
+    div{
+        min-width: 15%;
+    }
+
+    ul{
+        list-style: none;
+        padding-left: 0%;
+
+        li{
+            padding-bottom: 1.5%;
+        }
+    }
 }
 
 .bar {
-    background-color: #b5dee4;
+    background-color: rgb(var(--medium));
     height: 15px;
     width: 90%;
     border-radius: 20px;
@@ -36,17 +97,9 @@
 }
 
 .progress {
-    background-color: #1f8c9d;
+    background-color: rgb(var(--dark));
     height: 100%;
     border-radius: 20px;
-}
-
-.resumerow > h3 {
-    text-align: left;
-    margin-right: 6%;
-    margin-left: 5%;
-    padding: 1%;
-    width: 10%;
 }
 
 @media(max-width: 1000px) {

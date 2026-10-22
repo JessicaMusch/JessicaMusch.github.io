@@ -1,3 +1,13 @@
+/* ----------    Variables       ---------- */
+:root{
+    --background: 228, 233, 224;
+    --light: 202,210,197;
+    --medium: 132,169,140;
+    --darker: 82,121,111;
+    --dark: 53,79,82;
+    --fontcolour: #1e1e1e;
+}
+
 /* ----------    General items       ---------- */
 
 
@@ -17,44 +27,49 @@ font-style: normal;
 /* ----- Colours ----- */
 
 body{
-    background-color: #efefef;
-    color: #1e1e1e;
+    background-color: rgb(var(--light));
+    color: rgb(var(--dark));
 }
 
 .darktext{
-    color: #1e1e1e;
+    color: rgb(var(--dark));
 }
 
 /* ----- Links ----- */
 
 a {
     font-family: Arial, Helvetica, sans-serif;
-    color: #1e1e1e;
+    color: rgb(var(--dark));
     text-decoration: none;
 }
 
 a:hover{
-    color: #1f8c9d;
-}
+        color: rgb(var(--medium));
+    }
 
-/* ----- Text ----- */
-p {
+/* ----- Text, Lists, Sections, Details ----- */
+p, li, section, details {
     font-size: 1.1rem;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+details > summary{
+    font-size: 1rem;
+    margin-top: 1%
 }
 
 /* ----- Divider ----- */
 
 /* Rounded border */
 hr.rounded {
-    border-top: 2px solid #1f8c9d;
+    border-top: 2px solid rgb(var(--darker));
     border-radius: 4px;
 }
 
 
 .resume{
     width: 100%;
-    border-top: 1px solid #1f8c9d;
+    border-top: 1px solid rgb(var(--darker));
     border-radius: 4px;
 }
 
@@ -76,33 +91,34 @@ hr.rounded {
 
 /* navbar grid and list styles*/
 .navgrid{
-    background-color: #1f8c9d;
+    background-color: rgba(var(--dark));
     align-content: center;
-}
-.navgrid > ul{
-    display: grid;
-    grid-template-areas: ". . . . . . . .";
-    margin: 2rem;
-    align-items: center;
-    min-height: 2%;
-    list-style: none;
-    font-size: 1.4rem;
-    font-style: bold;
-    padding-left: 0%;
-    padding-right: 0%;
-}
 
-.navgrid > ul > li {
-    
-    padding: 1.5% 0;
-}
+    ul{
+        display: flex;
+        margin: 2rem;
+        align-items: center;
+        min-height: 1%;
+        list-style: none;
+        font-size: 1.4rem;
+        font-style: bold;
+        padding-left: 0%;
+        padding-right: 0%;
+        justify-content: center;
 
-.navgrid > ul > li > a{
-    color: #efefef;
+        li{
+            padding: .1% 0;
+
+            a{
+                color: rgb(var(--light));
+                padding-left: 5em;
+            }
+        }
+    }
 }
 
 .navgrid > ul > li > a:hover{
-    color: #b5dee4;
+    color: rgb(var(--medium));
 }
 
 .contact{
@@ -110,24 +126,23 @@ hr.rounded {
     text-align: right;
     display: flex;
     justify-content: right;
-}
 
-.contact > a{
-    padding-left: 20px;
-    font-size: 24px;
+    a{
+        padding-left: 20px;
+        font-size: 24px;
+    }
 }
 
 header > .rounded {
     margin: 0%;
-    
 }
 
 /* ----- Footer ----- */
 
 /* footer design */
 footer{
-    background-color: #1f8c9d;
-    color: #efefef;
+    background-color: rgb(var(--dark));
+    color: rgb(var(--light));
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
@@ -136,19 +151,18 @@ footer{
     padding-bottom: 3%;
     padding-left: 0%;
     padding-right: 0%;
-}
 
-/* footer link */
-footer > a{
-    color: #efefef;
-    font-size: 1em;
-    font-weight: 600;
-    padding-left: 0%;
-    padding-right: 0%;
+    a{
+        color: rgb(var(--light));
+        font-size: 1em;
+        font-weight: 600;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
 }
 
 footer > a:hover{
-    color: #b5dee4;
+    color: rgb(var(--medium));
 }
 
 #divspace{
@@ -156,6 +170,14 @@ footer > a:hover{
 } 
 
 /* ----------     Main Page       ---------- */
+#mainnav{
+    background-color: rgba(var(--dark), 0.8);
+    position: absolute;
+    top: 0%;
+    z-index: 1;
+    width: 100vw;
+    backdrop-filter: blur(30px);
+}
 
 .portrait{
     margin-top: 2rem;
@@ -183,6 +205,10 @@ footer > a:hover{
     justify-content: center;
 }
 
+.blurb{
+    height: 5vh;
+}
+
 /* ----------     Tiles       ---------- */
 
 .tile{
@@ -193,7 +219,7 @@ footer > a:hover{
     /*outline: #1e1e1e;
     outline-width: .1em;
     outline-style: solid;*/
-    background-color: #e1e6e7;
+    background-color: rgb(var(--background));
     max-height: max-content;
     margin: 0%;
     margin-top: 2%;
@@ -201,11 +227,40 @@ footer > a:hover{
     position: relative;
 }
 
+.tile > img{
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 0.75em 0 0 0.75em;
+    grid-column: 1;
+    max-width: 30rem;
+    height: 100%;
+    scale: auto;
+    align-self: center;
+    
+}
+
+.tile > div{
+    grid-column: 2;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.tile > div > h2{
+    width: 100%;
+    padding-bottom: 1%;
+}
+
 .tile:hover{
-    color: #1e1e1e;
-    outline: #1f8c9d;
+    color: rgb(var(--dark));
+    outline: rgb(var(--darker));
     outline-width: 2px;
     outline-style: solid;
+    box-shadow: 0px 0px 50px 20px rgb(var(--background));
+    scale: 1.01;
+    transition: scale .2s;
 }
 
 .tile::before{
@@ -233,38 +288,18 @@ footer > a:hover{
     padding-left: 5%;
 }
 
-.tile > img{
-    object-fit: cover;
-    object-position: center center;
-    border-radius: 0.75em 0 0 0.75em;
-    grid-column: 1;
-    max-width: 20rem;
-    height: 100%;
-    scale: auto;
-    align-self: center;
-    
-}
-
-.tile > div{
-    grid-column: 2;
-    padding-right: 5%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    text-align: justify;
-    hyphens: auto;
-}
-
 #space{
-   margin-bottom: 4%;
-   margin-top: 3%;
+   margin-bottom: 2%;
+   margin-top: .5%;
 }
 
 #stone{
     width: 20rem;
 }
 
-.tile > div > h2{
-    width: 100%;
+.stats{
+    font-size: .9em;
+    padding-bottom: 1%;
 }
 
 /* ----------     Tags       ---------- */
@@ -276,6 +311,21 @@ footer > a:hover{
     row-gap: 0.5em;
 }
 
+#linktags{
+    padding-top: 2%;
+    justify-content: center;
+}
+
+#linktags > .tag{
+    background-color: rgb(var(--dark));
+    color: rgb(var(--light));
+}
+
+#linktags > .tag:hover{
+    background-color: rgb(var(--dark));
+    color: rgb(var(--medium));
+}
+
 .tagsproject{
     margin-top: 8px;
     display: flex;
@@ -283,19 +333,19 @@ footer > a:hover{
     column-gap: 2%;
     row-gap: 0.5em;
     justify-content: center;
-}
 
-.tagsproject > .taghome{
-    padding: 1%;
+    .taghome{
+        padding: 1%;
     margin-top: 8px;
     margin-bottom: 8px;
+    }
 }
 
 .taghome{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #b5dee4;
+    background-color: rgb(var(--medium));
     border-radius: 20px;
     /*border-color: #d4d4d4;
     outline-width: 0.5%;
@@ -309,12 +359,19 @@ footer > a:hover{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #b5dee4;
+    background-color: rgb(var(--light));
     border-radius: 20px;
-    padding: 1.5%;
+    padding: 1.2%;
     max-width: 100%;
     text-align: center;
-    margin-bottom: 1%;
+    justify-content: center;
+    z-index: 1;
+    color: rgb(var(--dark));
+    margin-bottom: 2%;
+
+    p{
+        font-size: medium;
+    }
 }
 
 #first{
@@ -387,7 +444,7 @@ h3{
 
 .hamburger .innerhamburger, .hamburger .innerhamburger::after,
 .hamburger .innerhamburger::before {
-    background-color: #1f8c9d;
+    background-color: rgb(var(--dark));
     border-radius: 4px;
     width: inherit;
     height: 4px;
@@ -428,7 +485,7 @@ iframe{
 /* Slideshow container */
 .slideshow {
     grid-column: span 3;
-    max-width: 80%;
+    width: 100vw;
     position: relative;
     margin: auto;
 }
@@ -437,7 +494,7 @@ iframe{
 .caption {
     font-family: Arial, Helvetica, sans-serif;
     padding: 15px;
-    color: #efefef;
+    color: rgb(var(--light));
     position: absolute;
     bottom: 2%;
     width: 100%;
@@ -448,7 +505,7 @@ iframe{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 4em;
     padding: 15px;
-    color: #efefef;
+    color: rgb(var(--light));
     position: absolute;
     bottom: 45%;
     width: 100%;
@@ -456,16 +513,16 @@ iframe{
 }
 
 #textdarkbubblr{
-    color: #1e1e1e;
+    color: rgb(var(--dark));
 }
 
 .slide > img{
-    height: 650px;
+    opacity: 100%;
+    height: 70vh;
     object-fit: cover;
     object-position: center center;
     scale: auto;
-    width: 100%;
-    border-radius: 20px;
+    width: 100vw;
 }
 
 
@@ -527,7 +584,7 @@ iframe{
     }
 
     .navgrid a:hover{
-        color: #1f8c9d;
+        color: rgb(var(--medium));
     }
 }
 

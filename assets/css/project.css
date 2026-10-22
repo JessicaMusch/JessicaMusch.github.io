@@ -1,0 +1,105 @@
+/* ----------    Variables       ---------- */
+:root{
+    --background: 228, 233, 224;
+    --light: 202,210,197;
+    --medium: 132,169,140;
+    --darker: 82,121,111;
+    --dark: 53,79,82;
+    --fontcolour: #1e1e1e;
+}
+
+/* ----------    Top Line       ---------- */
+.top_rect{
+    background-color: rgb(var(--darker));
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 2rem),50% 100%,0 calc(100% - 2rem));
+}
+
+.p_topline{
+    display: flex;
+    height: 25rem;
+    padding-bottom: 1rem;
+}
+
+.bottom {
+  clip-path: polygon(0 0,50% 2rem,100% 0,100% 100%,0 100%);
+  margin-top: calc(10px - 2rem);
+}
+iframe{
+    width: auto;
+    height: 100%;
+}
+
+.p_video{
+    display: flex;
+    width: 50%;
+    padding: 3rem;
+    padding-left: 0%;
+    justify-content: left;
+}
+
+.p_info{
+    width: 50%;
+    padding: 3rem;
+    padding-left: 0%;
+    padding-right: 0%;
+
+    h1{
+        padding-top: 0%;
+    }
+
+    ul{
+        list-style: none;
+        padding-left: 0%;
+    }
+}
+
+/* ----------    2nd Line       ---------- */
+
+.contributions{
+    background-color: rgb(var(--medium));
+    clip-path: polygon(0 0,50% 2rem,100% 0,100% 100%,0 100%);
+    margin-top: calc(0% - 2rem);
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contributions_bottom{
+    height: 2rem;
+    background-color: rgb(var(--medium));
+    clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 2rem));
+}
+
+
+.process{
+    clip-path: polygon(0 0,100% 2rem,100% 100%,0 100%);
+    margin-top: calc(0px - 2rem);
+    background-color: rgb(var(--darker));
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.process_bottom{
+    height: 2rem;
+    background-color: rgb(var(--darker));
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 2rem),0 100%);
+}
+
+.learnings{
+    background-color: rgb(var(--medium));
+    clip-path: polygon(0 2rem,100% 0,100% 100%,0 100%);
+    margin-top: calc(0px - 2rem);
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.learnings_bottom{
+    height: 2rem;
+    background-color: rgb(var(--medium));
+    clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 2rem));
+}
+
+.image_gallery{
+    background-color: rgb(var(--darker));
+    clip-path: polygon(0 0,100% 2rem,100% 100%,0 100%);
+    margin-top: calc(0px - 2rem);
+}
