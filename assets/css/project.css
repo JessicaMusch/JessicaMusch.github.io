@@ -8,6 +8,17 @@
     --fontcolour: #1e1e1e;
 }
 
+.half{
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 3rem;
+    margin-top: 1rem;
+
+    p{
+        margin-bottom: 1rem;
+    }
+}
+
 /* ----------    Top Line       ---------- */
 .top_rect{
     background-color: rgb(var(--medium));
@@ -18,6 +29,10 @@
     display: flex;
     min-height: 25rem;
     padding-bottom: 1rem;
+
+    a:hover{
+        color: rgb(var(--light));
+    }
 }
 
 .bottom {
@@ -27,6 +42,7 @@
 
 iframe{
     width: auto;
+    max-width: 100%;
     height: 100%;
 }
 
@@ -68,13 +84,31 @@ iframe{
     padding-bottom: 2rem;
 }
 
+.p_secondline, .p_thirdline, .p_fourthline{
+    display: flex;
+    flex-wrap: wrap;
+
+    h1{
+        width: 100%;
+    }
+
+    p{
+        width: 100%;
+    }
+
+    ul{
+        width: 100%;
+        padding-left: 1rem;
+    }
+}
+
 .contributions_bottom{
     height: 2rem;
     background-color: rgb(var(--light));
     clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 2rem));
 }
 
-
+/* ----------    3rd Line       ---------- */
 .process{
     clip-path: polygon(0 0,100% 2rem,100% 100%,0 100%);
     margin-top: calc(0px - 2rem);
@@ -89,6 +123,7 @@ iframe{
     clip-path: polygon(0 0,100% 0,100% calc(100% - 2rem),0 100%);
 }
 
+/* ----------    4th Line       ---------- */
 .learnings{
     background-color: rgb(var(--light));
     clip-path: polygon(0 2rem,100% 0,100% 100%,0 100%);
@@ -102,6 +137,8 @@ iframe{
     background-color: rgb(var(--light));
     clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 2rem));
 }
+
+/* ----------    5th Line       ---------- */
 
 .image_gallery{
     background-color: rgb(var(--medium));
